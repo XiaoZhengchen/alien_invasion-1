@@ -6,15 +6,16 @@ alien_invasion.exe需与images文件夹保持同一目录
 alien_invasion.zip(不依赖开发环境)是体验程序
 *************************************************
 
-开发环境，游戏直接运行alien_invasion.exe即可，也可在具有Python3环境下运行alien_invasion.py
+开发环境，游戏直接运行alien_invasion.exe即可，也可在具有Python3环境下运行alien_invasion.py\n
 使用环境，完整的游戏可直接使用alien_invasion.zip(不依赖开发环境)
 alien_invasion.exe与alien_invasion.zip由pyinstall打包可得。pyinstall可使用pip装，具体安装过程略。
-=================================
+
+=================================\n
 练习环境：
     Python:3.5.2 64位
     pyinstall:3.2.1
 
-=================================
+=================================\n
 pyinstall使用：
     pyinstaller -F demo.py
     参数 	含义
@@ -25,7 +26,7 @@ pyinstall使用：
     -p 	添加搜索路径，让其找到对应的库。
     -i 	改变生成程序的icon图标
 
-=================================
+=================================\n
 打包注意事项：
     1.打包有2种方式，第一种是使用'-F'打包成单一的可执行文件，如alien_invasion.exe，此项目需要将
       images文件夹放置在与其同一目录下；第二种是默认使用'-D'方式，如alien_invasion.zip(解压)，
@@ -36,5 +37,3 @@ pyinstall使用：
            'pygame.font.SysFont(None, 48)'=>'pygame.font.SysFont('arial', 24)'
     3.使用pyinstaller打包时，不会自动包含图片文件，所以最简单的方式是打包后将图片放在运行程序的
       相应路径下。
-
-
